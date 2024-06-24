@@ -1,0 +1,13 @@
+//base styles
+@import "./base/base";
+@import "./base/reset";
+
+//utils styles
+@import "./utils/variables";
+
+//components styles
+@import "./components/container";
+@import "./components/header";
+@import "./components/exchange";
+@import "./components/currency";
+@import "./components/forecast";

@@ -1,0 +1,122 @@
+.exchange {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  margin-bottom: 30px;
+  @media (max-width: 1440px) {
+    display: none;
+  }
+}
+.answer {
+  margin-top: -4px;
+  display: none;
+  border-radius: 4px;
+  padding: 16px;
+}
+.question-toggle:checked ~ .answer {
+  display: block;
+}
+
+.answer-text {
+  margin-bottom: 20px;
+}
+
+.question-toggle {
+  display: none;
+}
+.question-toggle + label::after {
+  content: url("/images/arrows-list.svg");
+}
+
+.exchange-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  padding-top: 16px;
+  @media (max-width: 1440px) {
+    font-size: 24px;
+  }
+}
+
+.exchange-block {
+  display: flex;
+}
+
+.exchange-indicator {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: rgba(83, 145, 0, 0.07);
+  border-radius: 6px;
+  margin-right: 16px;
+}
+
+.indicator-coefficient {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  //   line-height: calc(48 / 36);
+  color: var(--first-text-color);
+  margin-right: 22px;
+}
+.indicator-percent {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: calc(28 / 21);
+  color: var(--secondary-text-color);
+}
+
+.exchange-time {
+  margin-right: 138px;
+}
+.exchange-time-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.exchange-time-text::before {
+  content: url("/images/time.svg");
+  margin-right: 5px;
+}
+
+.exchange-time-link {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+// .exchange-progress {
+// }
+.exchange-progress-time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-right: 30px;
+}
+
+.exchange-progress-data {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(0, 0, 0);
+  margin-right: 6px;
+}
+
+.exchange-progress-green {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.exchange-progress-red {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exchange-progress-line {
+  margin-right: 6px;
+}

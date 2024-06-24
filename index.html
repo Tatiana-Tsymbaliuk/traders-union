@@ -4,23 +4,380 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forex Forecast</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
-      <!-- Header content -->
-    </header>
-    <main>
-      <section class="forecast">
-        <!-- Main forecast content -->
-      </section>
-      <aside class="sidebar">
-        <!-- Sidebar content -->
-      </aside>
-    </main>
-    <footer>
-      <!-- Footer content -->
-    </footer>
-    <script src="scripts.js"></script>
+    <div>
+      <header class="header-conteiner container">
+        <div class="header-top">
+          <h2 class="header-text">Online Trading Starts Here</h2>
+          <div class="logo">
+            <img src="./images/TU_160.svg" alt="logo" class="logo" />
+          </div>
+          <div class="header-enter">
+            <button class="header-btn-singin">SING IN</button>
+            <button class="header-btn-register">REGISTER</button>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <ul class="header-menu list">
+            <li class="header-menu-item">BEST BROKERS</li>
+            <li class="header-menu-item">TRADING GUIDES</li>
+            <li class="header-menu-item">BROKER REVIEWS</li>
+            <li class="header-menu-item">PRICE PREDICTIONS</li>
+            <li class="header-menu-item">BROKERS BY COUNTRIES</li>
+            <li class="header-menu-item">WHO WE ARE</li>
+          </ul>
+          <div class="header-btn-group">
+            <button class="header-btn">
+              <img src="./images/search.svg" alt="logo" class="logo" />
+            </button>
+            <button class="header-btn">
+              <img src="./images/lang.svg" alt="logo" class="logo" />
+            </button>
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <img src="./images/menu.svg" alt="logo" class="logo" />
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="container">
+          <h2 class="exchange-title">EUR/USD - Euro US Dollar</h2>
+          <div class="exchange">
+            <div class="exchange-block">
+              <div class="exchange-indicator">
+                <p class="indicator-coefficient">1.0873</p>
+                <p class="indicator-percent">+0.24%</p>
+                <img src="./images/arrow.svg" alt="hight" class="" />
+              </div>
+              <div class="exchange-time">
+                <p class="exchange-time-text">
+                  Real-time Data <time id="currentTime" datetime=""></time>
+                </p>
+                <a href="" class="exchange-time-link">Disclaimer</a>
+              </div>
+            </div>
+            <div class="exchange-progress">
+              <div class="exchange-progress-green">
+                <p class="exchange-progress-time">Week change</p>
+                <p class="exchange-progress-data">1.0762</p>
+                <img
+                  src="./images/arrow-green.svg"
+                  alt="hight"
+                  class="exchange-progress-line"
+                />
+                <p>1.0810</p>
+              </div>
+              <div class="exchange-progress-red">
+                <p class="exchange-progress-time">Month change</p>
+                <p class="exchange-progress-data">1.0762</p>
+                <img
+                  src="./images/arrow-red.svg"
+                  alt="hight"
+                  class="exchange-progress-line"
+                />
+                <p>1.0910</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container currency">
+          <div class="currency-pairs">
+            <ul class="currency-pairs-list list">
+              <li class="currency-pairs-item">Currency pairs</li>
+              <li class="currency-pairs-item">Cryptocurrencies</li>
+              <li class="currency-pairs-item">Stocks</li>
+              <li class="currency-pairs-item">Indices</li>
+              <li class="currency-pairs-item">Commodities</li>
+            </ul>
+
+            <div class="socials">
+              <p>Share:</p>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="facebook-link"
+                ><svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 19 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6918 2.98875H13.4063V0.12675C13.1105 0.08775 12.0932 0 10.9084 0C8.43639 0 6.74296 1.49025 6.74296 4.22925V6.75H4.01501V9.9495H6.74296V18H10.0876V9.95025H12.7052L13.1207 6.75075H10.0868V4.5465C10.0876 3.62175 10.3474 2.98875 11.6918 2.98875Z"
+                    fill="black"
+                    fill-opacity="0.7"
+                  /></svg
+              ></a>
+              <a href=""
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_1010)">
+                    <path
+                      d="M10.7203 7.62262L17.4167 0H15.8304L10.0134 6.61726L5.37093 0H0.0150146L7.03694 10.0074L0.0150146 17.9999H1.60129L7.74015 11.0104L12.644 17.9999H18M2.17381 1.17142H4.61077L15.8292 16.8861H13.3916"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_1010">
+                      <rect
+                        width="17.985"
+                        height="18"
+                        fill="white"
+                        transform="translate(0.0150146)"
+                      />
+                    </clipPath>
+                  </defs></svg
+              ></a>
+            </div>
+          </div>
+
+          <div id="questions" class="questions-group questions">
+            <div class="faq-item">
+              <input type="checkbox" id="question1" class="question-toggle" />
+              <label for="question1" class="currency-select-text"
+                >Currency pairs</label
+              >
+              <div class="answer">
+                <ul class="list">
+                  <li>
+                    <a href="#" class="currency-select-text link"
+                      >Currency pairs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="currency-select-text link"
+                      >Cryptocurrencies</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="currency-select-text link">Stocks</a>
+                  </li>
+                  <li>
+                    <a href="#" class="currency-select-text link">Indice</a>
+                  </li>
+                  <li>
+                    <a href="#" class="currency-select-text link"
+                      >Commodities</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="currency-pairs-bottom">
+            <div class="currency-block">
+              <div class="arrow-green">
+                <img src="./images/arrow.svg" alt="hight" />
+              </div>
+              <div class="currency-name">
+                <p>LTC/USD</p>
+                <p>1.0798</p>
+              </div>
+              <div class="currency-coefficient">
+                <p>+0.19%</p>
+                <p>+0.056</p>
+              </div>
+            </div>
+            <div class="currency-block">
+              <div class="arrow-green">
+                <img src="./images/arrow.svg" alt="hight" />
+              </div>
+              <div class="currency-name">
+                <p>LTC/USD</p>
+                <p>1.0798</p>
+              </div>
+              <div class="currency-coefficient">
+                <p>+0.19%</p>
+                <p>+0.056</p>
+              </div>
+            </div>
+            <div class="currency-block">
+              <div class="arrow-green">
+                <img src="./images/arrow.svg" alt="hight" />
+              </div>
+              <div class="currency-name">
+                <p>LTC/USD</p>
+                <p>1.0798</p>
+              </div>
+              <div class="currency-coefficient">
+                <p>+0.19%</p>
+                <p>+0.056</p>
+              </div>
+            </div>
+            <div class="currency-block">
+              <div class="arrow-green">
+                <img src="./images/arrow.svg" alt="hight" />
+              </div>
+              <div class="currency-name">
+                <p>LTC/USD</p>
+                <p>1.0798</p>
+              </div>
+              <div class="currency-coefficient">
+                <p>+0.19%</p>
+                <p>+0.056</p>
+              </div>
+            </div>
+            <div class="currency-block">
+              <div class="arrow-green">
+                <img src="./images/arrow.svg" alt="hight" />
+              </div>
+              <div class="currency-name">
+                <p>LTC/USD</p>
+                <p>1.0798</p>
+              </div>
+              <div class="currency-coefficient">
+                <p>+0.19%</p>
+                <p>+0.056</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="forecast">
+          <div class="container">
+            <h2>EUR/USD Price Forecast for 2024, 2025</h2>
+            <div class="converter">
+              <h3>Converter</h3>
+              <div class="converter-content">
+                <input type="number" value="1000" id="amount" name="amount" />
+                <button class="converter-btn">
+                  <img src="./images/data-transfer .svg" />
+                </button>
+                <input
+                  type="number"
+                  value="0.0149"
+                  id="converted-amount"
+                  name="converted-amount"
+                />
+              </div>
+            </div>
+            <div class="rate-info cta">
+              <p>Prev. Close: <span>1.0777</span></p>
+              <p>Open: <span>1.0082</span></p>
+              <p>Month Range: <span>1.0762-1.0825</span></p>
+              <p>52 wk Range: <span>1.0062-1.0082</span></p>
+
+              <a href="#" class="cta-button">START TRADING XRP/USD</a>
+              <p class="risk-note">Your capital is at risk</p>
+            </div>
+            <h3>Euro / U.S Dollar Forecast</h3>
+            <div class="forecast-details">
+              <ul>
+                <li>Current Bitcoin (BTC) price XXX.</li>
+                <li>
+                  According to analytical forecasts, the price of EUR/USD may
+                  reach XXX by the end of 2024, and it is expected to be XXX by
+                  the end of 2025.
+                </li>
+                <li>
+                  Based on technical analysis indicators, the recommendation for
+                  the D1 (one-day) timeframe is YYY, and for the W1 (one-week)
+                  timeframe is YYY.
+                </li>
+              </ul>
+            </div>
+            <p>
+              Bitcoin is the most expensive and popular cryptocurrency that
+              enjoys wide popularity as an effective means of payment and an
+              excellent investment option for your savings. The key feature of
+              Bitcoin is the limited number of emissions at the software level.
+              The dollars and euros are being “printed” actively, while the
+              number of newly coined Bitcoins is continuously dropping whereas
+              the demand remains high.
+            </p>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <p>Strong Buy</p>
+                <p>Recommendation for BTC/USD on the timeframe</p>
+                <p>1H</p>
+              </li>
+              <li>
+                <p>Strong Sell</p>
+                <p>Recommendation for BTC/USD on the timeframe</p>
+                <p>4H</p>
+              </li>
+              <li>
+                <p>Neutral</p>
+                <p>Recommendation for BTC/USD on the timeframe</p>
+                <p>1D</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              Traders Union a custom-made model based on a combination of
+              various data and models.
+            </p>
+            <button>
+              Learn more about how we do it in our methodology<img />
+            </button>
+          </div>
+        </section>
+        <aside class="sidebar">
+          <!-- Sidebar content -->
+        </aside>
+      </main>
+      <footer>
+        <!-- Footer content -->
+      </footer>
+    </div>
+
+    <!---------------Mobile menu------------------->
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+  <img src="./img/mobil-menu-close.svg" alt="mobil-menu-close">
+  </button>
+  
+    <ul class="mobile-menu">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link mobile-menu-link-current link " href="">ЦИФРЫ</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="#deels"">СДЕЛКИ ОНЛАЙН</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="about">О КОМПАНИИ</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="">КАК НАЧАТЬ</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="#retes">ТАРИФЫ</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="#questions">ОТЗЫВЫ</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="">FAQ</a>
+      </li>
+    </ul>
+    <div class="btn-mobile-group">
+          <button class="btn-mobile-menu-registration">РЕГИСТРАЦИЯ</button>
+          <button class="btn-mobile-menu-enter">ВОЙТИ</button>
+        </div>
+  </div>  -->
+    <script defer src="./mobile-menu.js"></script>
+    <script defer src="./real-time.js"></script>
   </body>
 </html>

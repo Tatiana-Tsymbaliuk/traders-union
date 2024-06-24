@@ -1,0 +1,134 @@
+$primary-color: #0044cc;
+$secondary-color: #e0e0e0;
+$cta-color: #ff6600;
+$font-stack: "Arial", sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forecast {
+  padding: 2rem 0;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .converter {
+      background-color: rgba(211, 211, 212, 1);
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      .converter-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input {
+          padding: 0.5rem;
+          margin: 0.5rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .rate-info {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+
+      p {
+        margin: 0.5rem 0;
+
+        span {
+          font-weight: bold;
+          color: $primary-color;
+        }
+      }
+    }
+
+    .cta {
+      background-color: white;
+      padding: 1rem;
+      //       border-radius: 5px;
+      //       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+      text-align: center;
+
+      a.cta-button {
+        background-color: $cta-color;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($cta-color, 10%);
+        }
+      }
+
+      .risk-note {
+        font-size: 0.8rem;
+        color: #999;
+      }
+    }
+
+    .forecast-details {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 0.5rem;
+          padding-left: 1.5rem;
+          position: relative;
+
+          &::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Additional styles for responsiveness
+@media (max-width: 768px) {
+  .converter-content {
+    flex-direction: column;
+  }
+}
