@@ -11,11 +11,11 @@
 .questions-group {
   width: 632px;
   height: 36px;
-  border: 1px solid black;
+  border: 1px solid var(--first-text-color);
   border-radius: 4px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
+  @media (min-width: 1440px) {
+    display: none;
+  }
 }
 .currency-select-text {
   font-weight: 600;
@@ -77,7 +77,7 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding: 10px;
-  border: 1px solid rgba(225, 225, 225, 1);
+  border: 1px solid var(--noactive-text-color);
   border-radius: 10px;
 }
 .currency-name {

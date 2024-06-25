@@ -1,134 +1,143 @@
-$primary-color: #0044cc;
-$secondary-color: #e0e0e0;
-$cta-color: #ff6600;
-$font-stack: "Arial", sans-serif;
-
-@mixin flex-center {
+@mixin flex-center($position) {
   display: flex;
-  justify-content: center;
+  justify-content: $position;
   align-items: center;
 }
 
-.forecast {
-  padding: 2rem 0;
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .converter {
-      background-color: rgba(211, 211, 212, 1);
-      padding: 1rem;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1rem;
-
-      h3 {
-        margin-bottom: 1rem;
-      }
-
-      .converter-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        input {
-          padding: 0.5rem;
-          margin: 0.5rem;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-        }
-      }
-    }
-
-    .rate-info {
-      background-color: white;
-      padding: 1rem;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1rem;
-
-      p {
-        margin: 0.5rem 0;
-
-        span {
-          font-weight: bold;
-          color: $primary-color;
-        }
-      }
-    }
-
-    .cta {
-      background-color: white;
-      padding: 1rem;
-      //       border-radius: 5px;
-      //       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1rem;
-      text-align: center;
-
-      a.cta-button {
-        background-color: $cta-color;
-        color: white;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        margin-bottom: 0.5rem;
-        transition: background-color 0.3s;
-
-        &:hover {
-          background-color: darken($cta-color, 10%);
-        }
-      }
-
-      .risk-note {
-        font-size: 0.8rem;
-        color: #999;
-      }
-    }
-
-    .forecast-details {
-      background-color: white;
-      padding: 1rem;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1rem;
-
-      h3 {
-        margin-bottom: 1rem;
-      }
-
-      ul {
-        list-style-type: none;
-        padding: 0;
-
-        li {
-          margin-bottom: 0.5rem;
-          padding-left: 1.5rem;
-          position: relative;
-
-          &::before {
-            content: "✔";
-            position: absolute;
-            left: 0;
-            color: $primary-color;
-          }
-        }
-      }
-    }
+.forecast-title {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  padding-top: 16px;
+  @media (max-width: 1440px) {
+    font-size: 24px;
   }
 }
 
-// Additional styles for responsiveness
-@media (max-width: 768px) {
-  .converter-content {
-    flex-direction: column;
-  }
+.converter {
+  background-color: var(--noactive-text-color);
+  margin: 30px;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.converter-title {
+  text-align: center;
+}
+
+.converter-content {
+  @include flex-center(space-between);
+  padding-top: 12px;
+}
+
+.converter-amount {
+  width: 321px;
+  padding: 10px 16px 10px 16px;
+  border-radius: 4px;
+  border: none;
+  border: 1px solid rgb(193, 193, 195);
+
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+}
+
+.converter-btn {
+  border-radius: 6px;
+  border: 1px solid rgb(193, 193, 195);
+  background-color: var(--first-title-color);
+  height: 40px;
+}
+
+.currency-converter {
+  @include flex-center(center);
+  margin-top: 50px;
+  flex-direction: column;
+}
+.currency-converter .inputs {
+  @include flex-center(center);
+}
+.currency-converter input {
+  width: 100px;
+  padding: 10px;
+  margin: 0 10px;
+  text-align: center;
+}
+.currency-converter button {
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.currency-select-first {
+  position: absolute;
+  border: none;
+  left: 490px;
+  width: 30px;
+}
+.currency-select-secondary {
+  left: 915px;
+  position: absolute;
+  border: none;
+  width: 30px;
+}
+
+.forecast-block {
+  width: 870px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-text-color);
+  box-shadow: 0 4px var(--secondary-text-color);
+}
+
+.currency-data {
+  @include flex-center(space-between);
+  margin: 30px;
+}
+.currency-data-line {
+  border-bottom: 1px solid var(--noactive-text-color);
+  padding-bottom: 6px;
+  padding-top: 6px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.currency-data-index {
+  margin-left: 180px;
+  color: var(first-text-color);
+}
+
+.currency-trading {
+  display: grid;
+  justify-items: center;
+  padding-bottom: 24px;
+}
+.currency-trading-btn {
+  width: 370px;
+  height: 44px;
+  background-color: var(--activ-btn-color);
+  color: var(--first-title-color);
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  font-family: 16px;
+  padding: 10px 78px 10px 78px;
+  margin-bottom: 8px;
+}
+
+.currency-ad-risk {
+  @include flex-center(center);
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 12px;
+}
+
+.currency-risk-btn {
+  border: none;
+  background-color: var(--noactive-text-color);
+  margin-right: 5px;
+  border-radius: 3px;
+  color: var(--first-title-color);
+  font-weight: 400;
+  font-size: 11px;
+  padding: 3px 6px 3px 6px;
 }

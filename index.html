@@ -252,59 +252,139 @@
             </div>
           </div>
         </section>
-        <section class="forecast">
-          <div class="container">
-            <h2>EUR/USD Price Forecast for 2024, 2025</h2>
+        <section class="container">
+          <div class="tabs">
+            <div class="tab" onclick="moveSlider(this)">Current Outlook</div>
+            <div class="tab" onclick="moveSlider(this)">
+              Technicals and Signals
+            </div>
+            <div class="tab active" onclick="moveSlider(this)">
+              Long Term Forecast
+            </div>
+            <div class="slider"></div>
+          </div>
+        </section>
+
+        <section class="container">
+          <h2 class="forecast-title">EUR/USD Price Forecast for 2024, 2025</h2>
+          <div class="forecast-block">
             <div class="converter">
-              <h3>Converter</h3>
+              <h3 class="converter-title">Converter</h3>
               <div class="converter-content">
-                <input type="number" value="1000" id="amount" name="amount" />
-                <button class="converter-btn">
+                <input
+                  class="converter-amount"
+                  type="number"
+                  id="amount1"
+                  placeholder="Сума"
+                />
+                <input
+                  class="currency-select-first"
+                  type="text"
+                  id="currency1"
+                  value="USD"
+                  readonly
+                />
+                <button id="swapButton" class="converter-btn">
                   <img src="./images/data-transfer .svg" />
                 </button>
                 <input
+                  class="converter-amount"
                   type="number"
-                  value="0.0149"
-                  id="converted-amount"
-                  name="converted-amount"
+                  id="amount2"
+                  placeholder="Сума"
+                  readonly
+                />
+                <input
+                  class="currency-select-secondary"
+                  type="text"
+                  id="currency2"
+                  value="BTC"
+                  readonly
                 />
               </div>
             </div>
-            <div class="rate-info cta">
-              <p>Prev. Close: <span>1.0777</span></p>
-              <p>Open: <span>1.0082</span></p>
-              <p>Month Range: <span>1.0762-1.0825</span></p>
-              <p>52 wk Range: <span>1.0062-1.0082</span></p>
-
-              <a href="#" class="cta-button">START TRADING XRP/USD</a>
-              <p class="risk-note">Your capital is at risk</p>
+            <div class="currency-data">
+              <div class="currency-data-close-open">
+                <p class="currency-data-line">
+                  Prev. Close: <span class="currency-data-index">1.0777</span>
+                </p>
+                <p class="currency-data-line">
+                  Prev. Open: <span class="currency-data-index"> 1.0082</span>
+                </p>
+              </div>
+              <div class="currency-data-range">
+                <p class="currency-data-line">
+                  Month Range:
+                  <span class="currency-data-index">1.0762-1.0825</span>
+                </p>
+                <p class="currency-data-line">
+                  52 wk Range:
+                  <span class="currency-data-index">1.0062-1.0082</span>
+                </p>
+              </div>
             </div>
-            <h3>Euro / U.S Dollar Forecast</h3>
-            <div class="forecast-details">
-              <ul>
-                <li>Current Bitcoin (BTC) price XXX.</li>
-                <li>
+            <div class="currency-trading">
+              <button id="convertButton" class="currency-trading-btn">
+                START TRADING XRP/USD
+              </button>
+              <div class="currency-ad-risk">
+                <button class="currency-risk-btn">AD</button>
+                <p class="currency-risk-note">Your capital is at risk</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container">
+          <h3 class="forecast-title">Euro / U.S Dollar Forecast</h3>
+          <div class="forecast-detailes">
+            <div class="detailes-list">
+              <div class="detailes-item">
+                <img
+                  src="./images/one-dollar.svg"
+                  alt="one-dollar"
+                  class="one-dollar"
+                />
+                <p class="detailes-item-one detailes-item-text">
+                  Current Bitcoin (BTC) price XXX.
+                </p>
+              </div>
+              <div class="detailes-item">
+                <img
+                  src="./images/two-dollar.svg"
+                  alt="two-dollar"
+                  class="two-dollar"
+                />
+                <p class="detailes-item-two detailes-item-text">
                   According to analytical forecasts, the price of EUR/USD may
                   reach XXX by the end of 2024, and it is expected to be XXX by
                   the end of 2025.
-                </li>
-                <li>
+                </p>
+              </div>
+              <div class="detailes-item">
+                <img
+                  src="./images/three-dollar.svg"
+                  alt="three-dollar"
+                  class="three-dollar"
+                />
+                <p class="detailes-item-three detailes-item-text">
                   Based on technical analysis indicators, the recommendation for
                   the D1 (one-day) timeframe is YYY, and for the W1 (one-week)
                   timeframe is YYY.
-                </li>
-              </ul>
+                </p>
+              </div>
             </div>
-            <p>
-              Bitcoin is the most expensive and popular cryptocurrency that
-              enjoys wide popularity as an effective means of payment and an
-              excellent investment option for your savings. The key feature of
-              Bitcoin is the limited number of emissions at the software level.
-              The dollars and euros are being “printed” actively, while the
-              number of newly coined Bitcoins is continuously dropping whereas
-              the demand remains high.
-            </p>
           </div>
+
+          <p class="ditailes-currency">
+            Bitcoin is the most expensive and popular cryptocurrency that enjoys
+            wide popularity as an effective means of payment and an excellent
+            investment option for your savings. The key feature of Bitcoin is
+            the limited number of emissions at the software level. The dollars
+            and euros are being “printed” actively, while the number of newly
+            coined Bitcoins is continuously dropping whereas the demand remains
+            high.
+          </p>
+
           <div>
             <ul>
               <li>
@@ -334,6 +414,7 @@
             </button>
           </div>
         </section>
+
         <aside class="sidebar">
           <!-- Sidebar content -->
         </aside>
@@ -377,7 +458,10 @@
           <button class="btn-mobile-menu-enter">ВОЙТИ</button>
         </div>
   </div>  -->
+
     <script defer src="./mobile-menu.js"></script>
     <script defer src="./real-time.js"></script>
+    <script defer src="./converter.js"></script>
+    <script defer src="./tab.js"></script>
   </body>
 </html>
