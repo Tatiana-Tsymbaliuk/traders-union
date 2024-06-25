@@ -7,10 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <div>
@@ -385,38 +386,222 @@
             high.
           </p>
 
-          <div>
-            <ul>
-              <li>
-                <p>Strong Buy</p>
-                <p>Recommendation for BTC/USD on the timeframe</p>
-                <p>1H</p>
+          <div class="timeframe">
+            <ul class="timeframe-list list">
+              <li class="timeframe-item-buy">
+                <button class="timeframe-btn-buy">Strong Buy</button>
+                <p class="timeframe-text">
+                  Recommendation for BTC/USD on the timeframe
+                </p>
+                <div class="timeframe-index">1H</div>
               </li>
-              <li>
-                <p>Strong Sell</p>
-                <p>Recommendation for BTC/USD on the timeframe</p>
-                <p>4H</p>
+              <li class="timeframe-item-sell">
+                <button class="timeframe-btn-sell">Strong Sell</button>
+                <p class="timeframe-text">
+                  Recommendation for BTC/USD on the timeframe
+                </p>
+                <div class="timeframe-index">4H</div>
               </li>
-              <li>
-                <p>Neutral</p>
-                <p>Recommendation for BTC/USD on the timeframe</p>
-                <p>1D</p>
+              <li class="timeframe-item-neutral">
+                <button class="timeframe-btn-neutral">Neutral</button>
+                <p class="timeframe-text">
+                  Recommendation for BTC/USD on the timeframe
+                </p>
+                <div class="timeframe-index">1D</div>
               </li>
             </ul>
           </div>
-          <div>
-            <p>
+          <div class="learn-more">
+            <p class="learn-more-text">
               Traders Union a custom-made model based on a combination of
               various data and models.
             </p>
-            <button>
-              Learn more about how we do it in our methodology<img />
+            <div class="learn-more-btn">
+              Learn more about how we do it in our methodology
+            </div>
+            <button class="learn-more-btn-arrows">
+              <img src="./images/arrows -learn-more.svg" />
             </button>
           </div>
         </section>
+        <section class="container">
+          <h2 class="table-title">
+            EUR/USD price prediction for 2024-2025 by<br />
+            months
+          </h2>
+          <p class="table-text">
+            The table below shows the forecasts as of the end of each month in
+            2024, according to TU analysts price prediction.
+          </p>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Minimum Price</th>
+                  <th>Maximum Price</th>
+                  <th>Average Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>June 2024</td>
+                  <td>$59,944.84</td>
+                  <td>$73,265.92</td>
+                  <td>$66,605.38</td>
+                </tr>
+                <tr>
+                  <td>July 2024</td>
+                  <td>$60,244.57</td>
+                  <td>$73,632.25</td>
+                  <td>$66,938.41</td>
+                </tr>
+                <tr>
+                  <td>August 2024</td>
+                  <td>$60,545.79</td>
+                  <td>$74,000.41</td>
+                  <td>$67,273.11</td>
+                </tr>
+                <tr>
+                  <td>September 2024</td>
+                  <td>$60,848.52</td>
+                  <td>$74,370.42</td>
+                  <td>$67,609.47</td>
+                </tr>
+                <tr>
+                  <td>October 2024</td>
+                  <td>$61,152.77</td>
+                  <td>$74,742.27</td>
+                  <td>$67,947.52</td>
+                </tr>
+                <tr>
+                  <td>November 2024</td>
+                  <td>$61,458.53</td>
+                  <td>$75,115.99</td>
+                  <td>$68,287.26</td>
+                </tr>
+                <tr>
+                  <td>December 2024</td>
+                  <td>$61,765.83</td>
+                  <td>$75,491.57</td>
+                  <td>$68,628.7</td>
+                </tr>
+                <tr>
+                  <td>January 2025</td>
+                  <td>$62,074.66</td>
+                  <td>$75,869.02</td>
+                  <td>$66,605.38</td>
+                </tr>
+                <tr>
+                  <td>February 2025</td>
+                  <td>$62,385.03</td>
+                  <td>$73,632.25</td>
+                  <td>$66,938.41</td>
+                </tr>
+                <tr>
+                  <td>March 2025</td>
+                  <td>$62,696.95</td>
+                  <td>$74,000.41</td>
+                  <td>$67,273.11</td>
+                </tr>
+                <tr>
+                  <td>April 2025</td>
+                  <td>$63,010.44</td>
+                  <td>$74,370.42</td>
+                  <td>$67,609.47</td>
+                </tr>
+                <tr>
+                  <td>May 2025</td>
+                  <td>$63,325.49</td>
+                  <td>$74,742.27</td>
+                  <td>$67,947.52</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <div class="container">
+          <h2 class="chart-title">
+            EUR/USD Price Forecast for 2024: Chart Analysis
+          </h2>
+          <div class="chart-container">
+            <canvas id="forecastChart"></canvas>
+          </div>
+        </div>
 
-        <aside class="sidebar">
-          <!-- Sidebar content -->
+        <aside class="sidebar container">
+          <div class="pocket-container">
+            <button class="currency-risk-btn">AD</button>
+            <img src="./images/pocket.svg" />
+
+            <h2 class="pocket-title">50% Deposit Bonus</h2>
+            <p class="pocket-text">
+              Open an account on PocketOption, deposit any amount and get 15%
+              more money for successful trading.
+            </p>
+            <button class="pocket-receive-btn">RECEIVE BONUS</button>
+            <p class="pockrt-risk">Your capital is at risk</p>
+          </div>
+          <div>
+            <h2>
+              Top 3 <span>Gainers<img /> </span>Over the Last 30 Days
+            </h2>
+            <ul>
+              <li>Forex</li>
+              <li>Stocks</li>
+              <li>Crypto</li>
+              <li>Commodities</li>
+            </ul>
+            <div>
+              <div>
+                <p>1</p>
+                <p>BTC/USD</p>
+                <p>+0.19%</p>
+                <img src="./images/arrows-sidebar.svg" />
+              </div>
+              <div>
+                <p>2</p>
+                <p>USD/CAD</p>
+                <p>+0.19%</p>
+                <img src="./images/arrows-sidebar.svg" />
+              </div>
+              <div>
+                <p>3</p>
+                <p>USD/INR</p>
+                <p>+0.19%</p>
+                <img src="./images/arrows-sidebar.svg" />
+              </div>
+            </div>
+            <div>
+              <h2>
+                Top 3 <span>Gainers<img /> </span>Over the Last 30 Days
+              </h2>
+              <ul>
+                <li>Forex</li>
+                <li>Stocks</li>
+                <li>Crypto</li>
+                <li>Commodities</li>
+              </ul>
+              <div>
+                <div>
+                  <p>1</p>
+                  <p>BTC/USD</p>
+                  <p>+0.19%</p>
+                  <img src="./images/arrows-sidebar.svg" />
+                </div>
+                <div>
+                  <p>2</p>
+                  <p>USD/CAD</p>
+                  <p>+0.19%</p>
+                  <img src="./images/arrows-sidebar.svg" />
+                </div>
+                <p>3</p>
+                <p>USD/INR</p>
+                <p>+0.19%</p>
+                <img src="./images/arrows-sidebar.svg" />
+              </div>
+            </div>
+          </div>
         </aside>
       </main>
       <footer>
@@ -463,5 +648,6 @@
     <script defer src="./real-time.js"></script>
     <script defer src="./converter.js"></script>
     <script defer src="./tab.js"></script>
+    <script defer src="./chart-analysis.js"></script>
   </body>
 </html>

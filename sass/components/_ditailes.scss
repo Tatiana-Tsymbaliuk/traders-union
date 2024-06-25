@@ -33,3 +33,131 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.timeframe {
+  width: 870px;
+}
+
+.timeframe-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeframe-btn-buy {
+  border: none;
+  margin-top: 16px;
+  background-color: rgba(113, 178, 25, 0.07);
+  border-radius: 9px;
+  color: var(--secondary-text-color);
+  padding: 6px 16px 6px 16px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.timeframe-btn-sell {
+  border: none;
+  margin-top: 16px;
+  background-color: gba(204, 82, 73, 0.07);
+  border-radius: 9px;
+  color: var(--third-text-color);
+  padding: 6px 16px 6px 16px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.timeframe-btn-neutral {
+  border: none;
+  margin-top: 16px;
+  background-color: rgba(41, 46, 51, 0.07);
+  border-radius: 9px;
+  color: var(--first-text-color);
+  padding: 6px 16px 6px 16px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.timeframe-item-buy {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(83, 145, 0, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.timeframe-item-sell {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(204, 82, 73, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.timeframe-item-neutral {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--noactive-text-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.timeframe-text {
+  text-align: center;
+  padding: 6px 16px 10px 16px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.timeframe-index {
+  background-color: var(--noactive-text-color);
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.learn-more {
+  width: 870px;
+  padding: 16px 0 16px 0;
+  background-color: rgba(244, 247, 254, 1);
+  border-radius: 0 10px 10px 0;
+  border-left: 5px solid var(--activ-btn-color);
+  margin-bottom: 46px;
+}
+
+.learn-more-text {
+  margin-left: 16px;
+  padding-bottom: 10px;
+}
+
+.learn-more-btn {
+  width: 380px;
+  margin-left: 16px;
+  background-color: rgba(44, 100, 235, 0.05);
+  border-radius: 10px;
+  border: none;
+  padding: 6px 38px 6px 16px;
+  color: rgba(24, 115, 235, 1);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.learn-more-btn-arrows {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: -25px;
+  left: 410px;
+  cursor: pointer;
+}
