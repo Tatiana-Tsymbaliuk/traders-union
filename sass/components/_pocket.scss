@@ -1,0 +1,71 @@
+.sidebar {
+  display: grid;
+  gap: 30px;
+}
+
+.pocket-container {
+  width: 270px;
+  border: 1px solid var(--noactive-text-color);
+  border-radius: 10px;
+}
+
+.pocket-logo {
+  display: flex;
+  padding-top: 17px;
+  padding-bottom: 22px;
+  align-items: center;
+  margin: auto;
+}
+
+.pocket-title {
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.pocket-text {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  color: var(--carrency-tex-color);
+  padding-bottom: 22px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.pocket-risk-btn {
+  border: none;
+  background-color: var(--noactive-text-color);
+  top: 6px;
+  right: -235px;
+  border-radius: 3px;
+  color: var(--first-title-color);
+  font-weight: 400;
+  font-size: 11px;
+  padding: 3px 6px 3px 6px;
+  position: relative;
+}
+.pocket-receive-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--activ-btn-color);
+  color: var(--first-title-color);
+  padding: 10px 52px 10px 52px;
+  margin: auto;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.pocket-risk {
+  @include flex-center(center);
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}

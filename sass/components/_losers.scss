@@ -1,0 +1,170 @@
+.losers {
+  width: 270px;
+  border-radius: 10px;
+  border: 1px solid var(--noactive-text-color);
+}
+
+.losers-title {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--first-text-color);
+  padding: 16px 16px 20px 16px;
+}
+
+.losers-title-accent {
+  color: var(--third-text-color);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.losers-exchanges-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: calc(24 / 12);
+  font-weight: 600;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-bottom: 13px;
+  color: rgba(79, 79, 79, 1);
+  border-bottom: 1px solid var(--noactive-text-color);
+}
+
+.losers-currency-btc {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(250, 199, 30, 1);
+  margin-bottom: 6px;
+}
+.losers-currency-btc-number {
+  background-color: rgba(250, 199, 30, 0.15);
+  width: 30px;
+  height: 37px;
+  border-radius: 6px 0 0 6px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.losers-currency-btc-number-text {
+  margin-top: 9px;
+}
+.losers-currency-btc-data {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  gap: 20px;
+}
+
+.losers-currency-btc-index {
+  color: var(--third-text-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+}
+
+.losers-currency-btc-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  color: var(--carrency-tex-color);
+}
+
+.losers-currency-btc-logo {
+  background-color: var(--carrency-tex-color);
+}
+
+.losers-currency-cad {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(192, 200, 208, 1);
+  margin-bottom: 6px;
+}
+.losers-currency-cad-number {
+  background-color: rgba(192, 200, 208, 0.15);
+  width: 30px;
+  height: 37px;
+  border-radius: 6px 0 0 6px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.losers-currency-cad-data {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  gap: 20px;
+}
+
+.losers-currency-cad-index {
+  color: var(--third-text-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+}
+
+.losers-currency-cad-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  color: var(--carrency-tex-color);
+}
+
+.losers-currency-inr {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(252, 161, 110, 1);
+  margin-bottom: 16px;
+}
+.losers-currency-inr-number {
+  background-color: rgba(252, 161, 110, 0.15);
+  width: 30px;
+  height: 37px;
+  border-radius: 6px 0 0 6px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.losers-currency-inr-number-text {
+  margin-top: 9px;
+}
+.losers-currency-inr-data {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  gap: 20px;
+}
+
+.losers-currency-inr-index {
+  color: var(--third-text-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+}
+
+.losers-currency-inr-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  color: var(--carrency-tex-color);
+}

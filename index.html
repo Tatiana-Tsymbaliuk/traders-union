@@ -200,8 +200,8 @@
               </div>
             </div>
             <div class="currency-block">
-              <div class="arrow-green">
-                <img src="./images/arrow.svg" alt="hight" />
+              <div class="arrow-losers">
+                <img src="./images/arrow -losers.svg" alt="hight" />
               </div>
               <div class="currency-name">
                 <p>LTC/USD</p>
@@ -529,10 +529,10 @@
           </div>
         </div>
 
-        <aside class="sidebar container">
+        <section class="sidebar container">
           <div class="pocket-container">
-            <button class="currency-risk-btn">AD</button>
-            <img src="./images/pocket.svg" />
+            <button class="pocket-risk-btn">AD</button>
+            <img class="pocket-logo" src="./images/pocket.svg" />
 
             <h2 class="pocket-title">50% Deposit Bonus</h2>
             <p class="pocket-text">
@@ -540,74 +540,156 @@
               more money for successful trading.
             </p>
             <button class="pocket-receive-btn">RECEIVE BONUS</button>
-            <p class="pockrt-risk">Your capital is at risk</p>
+            <p class="pocket-risk">Your capital is at risk</p>
           </div>
-          <div>
-            <h2>
-              Top 3 <span>Gainers<img /> </span>Over the Last 30 Days
+          <div class="gainers">
+            <h2 class="gainers-title">
+              Top 3
+              <span class="gainers-title-accent"
+                >Gainers<img src="./images/arrow.svg" /> </span
+              >Over the Last 30 Days
             </h2>
-            <ul>
-              <li>Forex</li>
-              <li>Stocks</li>
-              <li>Crypto</li>
-              <li>Commodities</li>
+            <div class="gainers-line"></div>
+            <ul class="gainers-exchanges-list list">
+              <li class="gainers-exchanges-item">Forex</li>
+              <li class="gainers-exchanges-item">Stocks</li>
+              <li class="gainers-exchanges-item">Crypto</li>
+              <li class="gainers-exchanges-item">Commodities</li>
             </ul>
-            <div>
-              <div>
-                <p>1</p>
-                <p>BTC/USD</p>
-                <p>+0.19%</p>
-                <img src="./images/arrows-sidebar.svg" />
+            <div class="gainers-currencies">
+              <div class="gainers-currency-btc">
+                <div class="gainers-currency-btc-number"><span class="gainers-currency-number-text">1</span></div>
+                <div class="gainers-currency-btc-data">
+                <p class="gainers-currency-btc-name">BTC/USD</p>
+                <p class="gainers-currency-btc-index">+0.19%</p>
+                <img
+                  class="gainers-currency-logo"
+                  src="./images/arrows-sidebar.svg"
+                />
               </div>
-              <div>
-                <p>2</p>
-                <p>USD/CAD</p>
-                <p>+0.19%</p>
-                <img src="./images/arrows-sidebar.svg" />
               </div>
-              <div>
-                <p>3</p>
-                <p>USD/INR</p>
-                <p>+0.19%</p>
-                <img src="./images/arrows-sidebar.svg" />
+              <div class="gainers-currency-cad">
+                <p class="gainers-currency-cad-number"><span class="gainers-currency-number-text">2</span></p>
+                <p class="gainers-currency-cad-name">USD/CAD</p>
+                <p class="gainers-currency-cad-index">+0.19%</p>
+                <img
+                  class="gainers-currency-logo"
+                  src="./images/arrows-sidebar.svg"
+                />
               </div>
-            </div>
-            <div>
-              <h2>
-                Top 3 <span>Gainers<img /> </span>Over the Last 30 Days
-              </h2>
-              <ul>
-                <li>Forex</li>
-                <li>Stocks</li>
-                <li>Crypto</li>
-                <li>Commodities</li>
-              </ul>
-              <div>
-                <div>
-                  <p>1</p>
-                  <p>BTC/USD</p>
-                  <p>+0.19%</p>
-                  <img src="./images/arrows-sidebar.svg" />
-                </div>
-                <div>
-                  <p>2</p>
-                  <p>USD/CAD</p>
-                  <p>+0.19%</p>
-                  <img src="./images/arrows-sidebar.svg" />
-                </div>
-                <p>3</p>
-                <p>USD/INR</p>
-                <p>+0.19%</p>
-                <img src="./images/arrows-sidebar.svg" />
+              <div class="gainers-currency-inr">
+                <p class="gainers-currency-inr-number"><span class="gainers-currency-number-text">3</span></p>
+                <p class="gainers-currency-inr-name">USD/INR</p>
+                <p class="gainers-currency-inr-index">+0.19%</p>
+                <img
+                  class="gainers-currency-logo"
+                  src="./images/arrows-sidebar.svg"
+                />
               </div>
             </div>
           </div>
-        </aside>
+            <div class="losers">
+              <h2 class="losers-title">
+                Top 3 <span class="losers-title-accent">Losers<img src="./images/arrow -losers.svg"/> </span>Over the Last 30 Days
+              </h2>
+              <div class="gainers-line"></div>
+              <ul class="losers-exchanges-list list">
+                <li class="losers-exchanges-item">Forex</li>
+                <li class="losers-exchanges-item">Stocks</li>
+                <li class="losers-exchanges-item">Crypto</li>
+                <li class="losers-exchanges-item">Commodities</li>
+              </ul>
+              <div class="losers-currencies">
+                <div class="losers-currency-btc">
+                  <p class="losers-currency-btc-number"><span class="gainers-currency-number-text">1</span></p>
+                  <p class="losers-currency-btc-name">BTC/USD</p>
+                  <p class="losers-currency-btc-index">+0.19%</p>
+                  <img class="losers-currency-logo" src="./images/arrows-sidebar.svg" />
+                </div>
+                <div class="losers-currency-cad">
+                  <p class="losers-currency-cad-number"><span class="gainers-currency-number-text">2</span></p>
+                  <p class="losers-currency-cad-name">USD/CAD</p>
+                  <p class="losers-currency-cad-index">+0.19%</p>
+                  <img class="losers-currency-cad-logo" src="./images/arrows-sidebar.svg" />
+                </div>
+                <div class="losers-currency-inr">
+                <p class="losers-currency-inr-number"><span class="gainers-currency-number-text">3</span></p>
+                <p class="losers-currency-inr-name">USD/INR</p>
+                <p class="losers-currency-inr-index">+0.19%</p>
+                <img class="losers-currency-inr-logo" src="./images/arrows-sidebar.svg" />
+              </div>
+            </div>
+            </div>
+            <div class="analisis-exchanges">
+      <div class="analisis-exchanges-title">Long-term forecast based on technical analysis</div>
+      <div class="tabs">
+        <div class="tabt active" onclick="changeTab(this)">Forex</div>
+        <div class="tabt" onclick="changeTab(this)">Stocks</div>
+        <div class="tabt" onclick="changeTab(this)">Crypto</div>
+        <div class="tabt" onclick="changeTab(this)">Commodities</div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Pair</th>
+            <th>Price</th>
+            <th>Signal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BTC/USD</td>
+            <td>0.6087</td>
+            <td class="buy">Strong Buy</td>
+          </tr>
+          <tr>
+            <td>BTC/USD</td>
+            <td>0.6087</td>
+            <td class="sell">Sell</td>
+          </tr>
+          <tr>
+            <td>BTC/USD</td>
+            <td>0.6087</td>
+            <td class="sell">Sell</td>
+          </tr>
+          <tr>
+            <td>BTC/USD</td>
+            <td>0.6087</td>
+            <td class="buy">Strong Buy</td>
+          </tr>
+          <tr>
+            <td>BTC/USD</td>
+            <td>0.6087</td>
+            <td class="buy">Strong Buy</td>
+          </tr>
+          <tr>
+            <td>BTC/USD</td>
+            <td>0.6087</td>
+            <td class="buy">Strong Buy</td>
+          </tr>
+          <tr>
+            <td>BTC/USD</td>
+            <td>0.6087</td>
+            <td class="buy">Strong Buy</td>
+          </tr>
+          <tr>
+            <td>BTC/USD</td>
+            <td>0.6087</td>
+            <td class="sell">Sell</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        For this calculation our algorithm uses data on a weekly interval of
+        technical indicators: MA, RSI, CCI, ADX, MACD, Momentum, Ichimoku, etc.
+      </p>
+    </div>
+          </section>
       </main>
       <footer>
         <!-- Footer content -->
       </footer>
-    </div>
+    
 
     <!---------------Mobile menu------------------->
     <!-- <div class="menu-container js-menu-container" id="mobile-menu">
@@ -649,5 +731,6 @@
     <script defer src="./converter.js"></script>
     <script defer src="./tab.js"></script>
     <script defer src="./chart-analysis.js"></script>
+    <script defer src="./tab-exchanges.js"></script>
   </body>
 </html>

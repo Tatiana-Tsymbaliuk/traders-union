@@ -37,6 +37,7 @@ dd {
   --secondary-text-color: rgba(83, 145, 0, 1);
   --third-text-color: rgba(204, 82, 73, 1);
   --noactive-text-color: rgba(211, 211, 212, 1);
+  --carrency-tex-color: rgba(0, 0, 0, 0.7);
   --activ-btn-color: rgba(24, 115, 235, 1);
   --noactiv-btn-color: rgba(44, 100, 235, 0.07);
   --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -487,6 +488,20 @@ dd {
   border-radius: 6px;
   padding: 10px;
   background-color: rgba(83, 145, 0, 0.07);
+  width: 30px;
+  height: 30px;
+}
+
+.arrow-losers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: rgba(204, 82, 73, 0.07);
   width: 30px;
   height: 30px;
 }
@@ -983,6 +998,7 @@ tbody td {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 830px;
   height: 418px;
+  margin-bottom: 38px;
 }
 
 .chart-title {
@@ -1002,4 +1018,604 @@ tbody td {
 canvas {
   display: block;
   max-width: 100%;
+}
+
+.sidebar {
+  display: grid;
+  gap: 30px;
+}
+
+.pocket-container {
+  width: 270px;
+  border: 1px solid var(--noactive-text-color);
+  border-radius: 10px;
+}
+
+.pocket-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 17px;
+  padding-bottom: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.pocket-title {
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.pocket-text {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  color: var(--carrency-tex-color);
+  padding-bottom: 22px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.pocket-risk-btn {
+  border: none;
+  background-color: var(--noactive-text-color);
+  top: 6px;
+  right: -235px;
+  border-radius: 3px;
+  color: var(--first-title-color);
+  font-weight: 400;
+  font-size: 11px;
+  padding: 3px 6px 3px 6px;
+  position: relative;
+}
+
+.pocket-receive-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--activ-btn-color);
+  color: var(--first-title-color);
+  padding: 10px 52px 10px 52px;
+  margin: auto;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.pocket-risk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.gainers {
+  width: 270px;
+  border-radius: 10px;
+  border: 1px solid var(--noactive-text-color);
+}
+
+.gainers-title {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--first-text-color);
+  padding: 16px 16px 20px 16px;
+}
+
+.gainers-line {
+  width: 40px;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+
+.gainers-title-accent {
+  color: var(--secondary-text-color);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.gainers-exchanges-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 600;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-bottom: 13px;
+  color: rgb(79, 79, 79);
+  border-bottom: 1px solid var(--noactive-text-color);
+}
+
+.gainers-currency-btc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 20px;
+  border-radius: 6px;
+  border: 1px solid rgb(250, 199, 30);
+  margin-bottom: 6px;
+}
+
+.gainers-currency-btc-number {
+  background-color: rgba(250, 199, 30, 0.15);
+  width: 30px;
+  height: 37px;
+  border-radius: 6px 0 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gainers-currency-number-text {
+  margin-top: 9px;
+}
+
+.gainers-currency-btc-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 37px;
+  gap: 20px;
+}
+
+.gainers-currency-btc-index {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+}
+
+.gainers-currency-btc-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  color: var(--carrency-tex-color);
+}
+
+.gainers-currency-btc-logo {
+  background-color: var(--carrency-tex-color);
+}
+
+.gainers-currency-cad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 20px;
+  border-radius: 6px;
+  border: 1px solid rgb(192, 200, 208);
+  margin-bottom: 6px;
+}
+
+.gainers-currency-cad-number {
+  background-color: rgba(192, 200, 208, 0.15);
+  width: 30px;
+  height: 37px;
+  border-radius: 6px 0 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gainers-currency-cad-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 37px;
+  gap: 20px;
+}
+
+.gainers-currency-cad-index {
+  color: var(--third-text-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+}
+
+.gainers-currency-cad-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  color: var(--carrency-tex-color);
+}
+
+.gainers-currency-inr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 20px;
+  border-radius: 6px;
+  border: 1px solid rgb(252, 161, 110);
+  margin-bottom: 16px;
+}
+
+.gainers-currency-inr-number {
+  background-color: rgba(252, 161, 110, 0.15);
+  width: 30px;
+  height: 37px;
+  border-radius: 6px 0 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gainers-currency-inr-number-text {
+  margin-top: 9px;
+}
+
+.gainers-currency-inr-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 37px;
+  gap: 20px;
+}
+
+.gainers-currency-inr-index {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+}
+
+.gainers-currency-inr-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  color: var(--carrency-tex-color);
+}
+
+.losers {
+  width: 270px;
+  border-radius: 10px;
+  border: 1px solid var(--noactive-text-color);
+}
+
+.losers-title {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--first-text-color);
+  padding: 16px 16px 20px 16px;
+}
+
+.losers-title-accent {
+  color: var(--third-text-color);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.losers-exchanges-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 600;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-bottom: 13px;
+  color: rgb(79, 79, 79);
+  border-bottom: 1px solid var(--noactive-text-color);
+}
+
+.losers-currency-btc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 20px;
+  border-radius: 6px;
+  border: 1px solid rgb(250, 199, 30);
+  margin-bottom: 6px;
+}
+
+.losers-currency-btc-number {
+  background-color: rgba(250, 199, 30, 0.15);
+  width: 30px;
+  height: 37px;
+  border-radius: 6px 0 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.losers-currency-btc-number-text {
+  margin-top: 9px;
+}
+
+.losers-currency-btc-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 37px;
+  gap: 20px;
+}
+
+.losers-currency-btc-index {
+  color: var(--third-text-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+}
+
+.losers-currency-btc-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  color: var(--carrency-tex-color);
+}
+
+.losers-currency-btc-logo {
+  background-color: var(--carrency-tex-color);
+}
+
+.losers-currency-cad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 20px;
+  border-radius: 6px;
+  border: 1px solid rgb(192, 200, 208);
+  margin-bottom: 6px;
+}
+
+.losers-currency-cad-number {
+  background-color: rgba(192, 200, 208, 0.15);
+  width: 30px;
+  height: 37px;
+  border-radius: 6px 0 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.losers-currency-cad-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 37px;
+  gap: 20px;
+}
+
+.losers-currency-cad-index {
+  color: var(--third-text-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+}
+
+.losers-currency-cad-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  color: var(--carrency-tex-color);
+}
+
+.losers-currency-inr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 20px;
+  border-radius: 6px;
+  border: 1px solid rgb(252, 161, 110);
+  margin-bottom: 16px;
+}
+
+.losers-currency-inr-number {
+  background-color: rgba(252, 161, 110, 0.15);
+  width: 30px;
+  height: 37px;
+  border-radius: 6px 0 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.losers-currency-inr-number-text {
+  margin-top: 9px;
+}
+
+.losers-currency-inr-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 37px;
+  gap: 20px;
+}
+
+.losers-currency-inr-index {
+  color: var(--third-text-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+}
+
+.losers-currency-inr-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  color: var(--carrency-tex-color);
+}
+
+.analisis-exchanges {
+  width: 270px;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 8px;
+}
+
+.analisis-exchanges-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+}
+
+.tabt {
+  cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+}
+
+.tabt.active {
+  color: #4caf50;
+  border-color: #4caf50;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--noactiv-text-color);
+}
+
+.table th {
+  background-color: #f9f9f9;
+}
+
+.buy {
+  color: #4caf50;
+}
+
+.sell {
+  color: #f44336;
 }/*# sourceMappingURL=main.css.map */
