@@ -255,18 +255,18 @@
         </section>
         <section class="container">
           <div class="tabs">
-            <div class="tab" onclick="moveSlider(this)">Current Outlook</div>
+            <div class="tab active" onclick="moveSlider(this)">Current Outlook</div>
             <div class="tab" onclick="moveSlider(this)">
               Technicals and Signals
             </div>
-            <div class="tab active" onclick="moveSlider(this)">
+            <div class="tab " onclick="moveSlider(this)">
               Long Term Forecast
             </div>
             <div class="slider"></div>
           </div>
         </section>
-
-        <section class="container">
+<section class="bigdata container">
+        <section class="forecast">
           <h2 class="forecast-title">EUR/USD Price Forecast for 2024, 2025</h2>
           <div class="forecast-block">
             <div class="converter">
@@ -335,7 +335,7 @@
             </div>
           </div>
         </section>
-        <section class="container">
+        <section class="detailes">
           <h3 class="forecast-title">Euro / U.S Dollar Forecast</h3>
           <div class="forecast-detailes">
             <div class="detailes-list">
@@ -424,7 +424,7 @@
             </button>
           </div>
         </section>
-        <section class="container">
+        <section class="prediction">
           <h2 class="table-title">
             EUR/USD price prediction for 2024-2025 by<br />
             months
@@ -519,17 +519,69 @@
               </tbody>
             </table>
           </div>
+          <div class="mobile-tab">
+          <div id="questions" class="questions-group questions">
+            <div class="faq-item">
+              <input type="checkbox" id="question1" class="question-toggle"/>
+              <label for="question1" class="currency-select-text"
+                >JUNE 2024</label
+              >
+              <div class="answer">
+                <ul class="list">
+                  <li>
+                    <a href="#" class="currency-select-text link"
+                      >Currency pairs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="currency-select-text link"
+                      >Cryptocurrencies</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="currency-select-text link">Stocks</a>
+                  </li>
+                  <li>
+                    <a href="#" class="currency-select-text link">Indice</a>
+                  </li>
+                  <li>
+                    <a href="#" class="currency-select-text link"
+                      >Commodities</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <table>
+          <tbody>
+                <tr>
+                  <td>Minimum Price</td>
+                  <td>$59,944.84</td>
+                  
+                </tr>
+                <tr>
+                  <td>Maximum Price</td>
+                  <td>$70,244.57</td>
+                  
+                </tr>
+                <tr>
+                  <td>Average Price</td>
+                  <td>$60,545.79</td>
+                  
+                </tr></tbody></table>
+          </div>
         </section>
-        <div class="container">
+        <section class="analysis">
           <h2 class="chart-title">
             EUR/USD Price Forecast for 2024: Chart Analysis
           </h2>
           <div class="chart-container">
             <canvas id="forecastChart"></canvas>
           </div>
-        </div>
+        </section>
 
-        <section class="sidebar container">
+        <section class="sidebar">
           <div class="pocket-container">
             <button class="pocket-risk-btn">AD</button>
             <img class="pocket-logo" src="./images/pocket.svg" />
@@ -621,22 +673,15 @@
             </div>
             </div>
             <div class="analisis-exchanges">
-      <div class="analisis-exchanges-title">Long-term forecast based on technical analysis</div>
-      <div class="tabs">
-        <div class="tabt active" onclick="changeTab(this)">Forex</div>
-        <div class="tabt" onclick="changeTab(this)">Stocks</div>
-        <div class="tabt" onclick="changeTab(this)">Crypto</div>
-        <div class="tabt" onclick="changeTab(this)">Commodities</div>
-      </div>
+      <h2 class="analisis-exchanges-title">Long-term forecast based on technical analysis</h2>
+      <div class="gainers-line"></div>
+     <div class="new-tabs">
+            <div class="new-tab active" onclick="changeNewTab(this)">Forex</div>
+            <div class="new-tab" onclick="changeNewTab(this)">Stocks</div>
+            <div class="new-tab" onclick="changeNewTab(this)">Crypto</div>
+            <div class="new-tab" onclick="changeNewTab(this)">Commodities</div>
+        </div>
       <table class="table">
-        <thead>
-          <tr>
-            <th>Pair</th>
-            <th>Price</th>
-            <th>Signal</th>
-          </tr>
-        </thead>
-        <tbody>
           <tr>
             <td>BTC/USD</td>
             <td>0.6087</td>
@@ -679,52 +724,51 @@
           </tr>
         </tbody>
       </table>
-      <p>
+      <p class="analisis-exchanges-text">
         For this calculation our algorithm uses data on a weekly interval of
         technical indicators: MA, RSI, CCI, ADX, MACD, Momentum, Ichimoku, etc.
       </p>
     </div>
           </section>
+</section>
       </main>
       <footer>
         <!-- Footer content -->
       </footer>
     
 
-    <!---------------Mobile menu------------------->
-    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+   <!-----------Mobile menu---------------->
+     <div class="menu-container js-menu-container" id="mobile-menu">
   <button class="menu-toggle js-close-menu">
-  <img src="./img/mobil-menu-close.svg" alt="mobil-menu-close">
+  <img src="./images/mobil-menu-close.svg" alt="mobil-menu-close">
   </button>
   
     <ul class="mobile-menu">
       <li class="mobile-menu-item">
-        <a class="mobile-menu-link mobile-menu-link-current link " href="">ЦИФРЫ</a>
+        <a class="mobile-menu-link mobile-menu-link-current link " href="">BEST BROKERS</a>
       </li>
       <li class="mobile-menu-item">
-        <a class="mobile-menu-link link" href="#deels"">СДЕЛКИ ОНЛАЙН</a>
+        <a class="mobile-menu-link link" href="">TRADING GUIDES</a>
       </li>
       <li class="mobile-menu-item">
-        <a class="mobile-menu-link link" href="about">О КОМПАНИИ</a>
+        <a class="mobile-menu-link link" href="">BROKER REVIEWS</a>
       </li>
       <li class="mobile-menu-item">
-        <a class="mobile-menu-link link" href="">КАК НАЧАТЬ</a>
+        <a class="mobile-menu-link link" href="">PRICE PREDICTIONS</a>
       </li>
       <li class="mobile-menu-item">
-        <a class="mobile-menu-link link" href="#retes">ТАРИФЫ</a>
+        <a class="mobile-menu-link link" href="">BROKERS BY COUNTRIES</a>
       </li>
       <li class="mobile-menu-item">
-        <a class="mobile-menu-link link" href="#questions">ОТЗЫВЫ</a>
-      </li>
-      <li class="mobile-menu-item">
-        <a class="mobile-menu-link link" href="">FAQ</a>
+        <a class="mobile-menu-link link" href="">WHO WE ARE</a>
       </li>
     </ul>
     <div class="btn-mobile-group">
-          <button class="btn-mobile-menu-registration">РЕГИСТРАЦИЯ</button>
-          <button class="btn-mobile-menu-enter">ВОЙТИ</button>
+          <button class="btn-mobile-menu-registration">Register</button>
+          <button class="btn-mobile-menu-enter">Sign In</button>
         </div>
-  </div>  -->
+  </div> 
+<script src="https://unpkg.com/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
 
     <script defer src="./mobile-menu.js"></script>
     <script defer src="./real-time.js"></script>

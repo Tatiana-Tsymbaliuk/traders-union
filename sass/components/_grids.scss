@@ -1,0 +1,38 @@
+.sidebar {
+  display: grid;
+  gap: 30px;
+  @media (max-width: 1440px) {
+    display: none;
+  }
+}
+
+.bigdata {
+  display: grid;
+}
+
+@media (min-width: 1440px) {
+  .bigdata {
+    grid-template-areas:
+      "f s"
+      "d s"
+      "p s"
+      "a .";
+    gap: 0px 108px;
+  }
+
+  .forecast {
+    grid-area: f;
+  }
+  .detailes {
+    grid-area: d;
+  }
+  .prediction {
+    grid-area: p;
+  }
+  .analysis {
+    grid-area: a;
+  }
+  .sidebar {
+    grid-area: s;
+  }
+}
