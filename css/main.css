@@ -434,8 +434,8 @@ dd {
 }
 
 .currency-select-text:hover::after {
-  background-color: --noactiv-btn-color;
-  color: var(--first-title-color);
+  background-color: rgba(44, 100, 235, 0.07);
+  fill: var(--first-text-color);
 }
 
 .answer {
@@ -460,6 +460,14 @@ dd {
 
 .question-toggle:checked ~ .answer {
   display: block;
+}
+
+.question-toggle + label::after {
+  content: url("/images/questions-open.svg");
+}
+
+.question-toggle:checked + label::after {
+  content: url("/images/questions-close.svg");
 }
 
 .currency-pairs {
