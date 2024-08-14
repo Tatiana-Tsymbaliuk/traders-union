@@ -4,13 +4,15 @@
   border-radius: 10px;
   margin-top: 30px;
 }
-
-.pocket-logo {
+%flex {
   display: flex;
+  align-items: center;
+}
+.pocket-logo {
+  @extend %flex;
+  margin: auto;
   padding-top: 17px;
   padding-bottom: 22px;
-  align-items: center;
-  margin: auto;
 }
 
 .pocket-title {

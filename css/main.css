@@ -1275,12 +1275,15 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 17px;
-  padding-bottom: 22px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.pocket-logo {
   margin: auto;
+  padding-top: 17px;
+  padding-bottom: 22px;
 }
 
 .pocket-title {

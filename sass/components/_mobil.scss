@@ -17,25 +17,6 @@
 .menu-container.is-open {
   transform: translateX(0);
 }
-// .menu-toggle {
-//   min-height: 32px;
-//   min-width: 32px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin-left: 240px;
-//   padding: 0;
-//   background-color: transparent;
-//   color: #ffffff;
-//   cursor: pointer;
-//   border: none;
-//   border-radius: 50%;
-//   outline: none;
-//   position: relative;
-//   @media (min-width: 1440px) {
-//     display: none;
-//   }
-// }
 
 .menu-container .menu-toggle {
   position: absolute;
